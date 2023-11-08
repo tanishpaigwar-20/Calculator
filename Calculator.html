@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            letter-spacing: 1px;
+        }
+
+        body{
+            min-height: 100vh;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            background: rgb(182, 72, 230);
+        }
+        .container {
+            text-align: center;
+            margin-top: 23px
+        }
+
+        table {
+            margin: auto;
+        }
+
+        input {
+            border-radius: 21px;
+            border: 5px solid #244624;
+            font-size: 34px;
+            height: 65px;
+            width: 456px;
+        }
+
+        button {
+            border-radius: 40px;
+            font-size: 40px;
+            background: linear-gradient(45deg, #0a0a0a, #3a4452);
+            width: 102px;
+            height: 90px;
+            margin: 6px;
+            text-shadow: 4px 5px 8px solid gray;
+        }
+
+        .calculator {
+            box-shadow: 4px 5px 10px gray;
+            /* background-color: #292729; */
+            background: linear-gradient(45deg, #0a0a0ae8, #3a4452);
+            padding: 23px;
+            border-radius: 53px;
+            display: inline-block;
+
+        }
+
+        h1 {
+            font-size: 38px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px;
+        }
+
+        .orangge{
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>&nsc; Calculator By Tanish Paigwar</h1>
+
+        <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button class="orangge">(</button></td>
+                    <td><button class="orangge">)</button></td>
+                    <td><button class="orangge">C</button></td>
+                    <td><button class="orangge">%</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button class="orangge">X</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button class="orangge">-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button class="orangge">+</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>/</button></td>
+                    <td><button class="orangge">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="calc.js"></script>
+
+</html>
